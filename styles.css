@@ -1,12 +1,83 @@
 body {
-	font-family: 'Noto Sans', sans-serif;
-	background: #caebf2;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 15px;
+	background: #f2f3f4;
 }
 
-
-h1, h2, h3, h4, {
-	font-family: 'robot Mono' monospace;
+body, ul {
+		margin: 0;
+		padding: 0;
 }
+
+h1, h2, .names {
+	font-family: 'Libre Baskerville', serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 50px;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+nav ul li a{
+    border: 0px solid #035b7a;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+nav ul li a:hover {
+	background: #dddace;
+	color: #002756;
+}
+
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px;
+}
+header {
+	top: 90px;
+	position: relative;
+	margin-bottom: 120px;
+	background-image: url('images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -110px;
+}
+
+.buttoncv {
+    border: 1px solid #002756;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+.buttoncv:hover {
+	background: #00447c;
+	color: #f2f3f4;
+}
+
 
 .container > div {
 	max-width: 20px auto;
@@ -23,10 +94,11 @@ h1, h2, h3, h4, {
 
 .intros {
 	display:grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 100%;
+	text-align: center;
 }
 
-.i-am, .i-like {
+.objective {
 	text-align: center;
 	color: black;
 }
@@ -45,6 +117,7 @@ h1, h2, h3, h4, {
 
 .project-heading {
 	text-align: center;
+	font-size: 20px;
 }
 
 .project-grid {
@@ -115,8 +188,8 @@ h1, h2, h3, h4, {
 
 .profile-picture {
 	border-radius: 50%;
-	width:150px;
-	height: 150px;
+	width:180px;
+	height: 180px;
 	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
 	transition: all ease-in-out .2s;
 }
