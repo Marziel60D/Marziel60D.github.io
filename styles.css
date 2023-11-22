@@ -54,13 +54,21 @@ nav ul {
 	padding: 25px;
 }
 header {
-	top: 90px;
-	position: relative;
-	margin-bottom: 120px;
-	background-image: url('images/background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: -110px;
+    top: 72px;
+    position: relative;
+    margin-bottom: 70px;
+    background-image: url(images/backgroundblue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -187px;
+}
+
+.course {
+    margin-bottom: 10px;
+}
+
+.school {
+    margin-top: 0px;
 }
 
 .buttoncv {
@@ -116,8 +124,10 @@ header {
 /*newlinw*/
 
 .project-heading {
-	text-align: center;
-	font-size: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 62px;
+    margin-bottom: 30px;
 }
 
 .project-grid {
@@ -187,11 +197,12 @@ header {
 }
 
 .profile-picture {
-	border-radius: 50%;
-	width:180px;
-	height: 180px;
-	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
-	transition: all ease-in-out .2s;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+    margin-top: 90px;
 }
 
 .profile-picture:hover {
