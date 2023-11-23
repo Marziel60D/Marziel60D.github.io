@@ -1,7 +1,7 @@
 body {
 	font-family: 'Signika Negative', sans-serif;
 	font-size: 15px;
-	background: #f2f3f4;
+	background: #eaeaea;
 }
 
 body, ul {
@@ -45,7 +45,8 @@ nav ul li a{
 }
 nav ul li a:hover {
 	background: #dddace;
-	color: #002756;
+	color: #00447c;
+	font-weight: bold;
 }
 
 nav ul {
@@ -72,7 +73,7 @@ header {
 }
 
 .buttoncv {
-    border: 1px solid #002756;
+    border: 2px solid #00447c;
     text-decoration: none;
     color: #c6c3b6;
     padding: 5px 10px;
@@ -82,7 +83,7 @@ header {
     transition: background 0.5s ease-in-out, color 0.5s;
 }
 .buttoncv:hover {
-	background: #00447c;
+	background: #0b7b9e;
 	color: #f2f3f4;
 }
 
@@ -122,6 +123,14 @@ header {
 }
 
 /*newlinw*/
+.menu {
+    width: 100%;
+    background-color: #f2f3f4;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}
 
 .project-heading {
     text-align: center;
@@ -136,9 +145,9 @@ header {
 }
 
 .project-image-wrapper {
-	justify-self: center;
-	padding: 4%;
-	position:relative;
+    justify-self: center;
+    padding: 40px;
+    position: relative;
 }
 
 
@@ -178,12 +187,41 @@ header {
 
 .links-and-contacts {
 	display:grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 60% 40%;
 }
 
 .links {
-	justify-self:center;
+	justify-self: center;
+    margin: -26px 0px;
+    padding: 0;
+
 }
+
+.links ul li {
+    display: inline-block;
+    margin: 20px 25px;
+    padding: 0;
+}
+
+.links ul li a img {
+	size: 50px;
+    border: 0px solid #035b7a;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+
+.contact {
+	justify-self: left;
+    margin: -23px -16px;
+    padding: 0;
+}
+
+
+
 
 .link-list {
 	list-style:none;
@@ -210,9 +248,12 @@ header {
 }
 
  form input, textarea {
- 	padding:5px;
- 	border-radius: 5px;
- 	width: 240px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    color: #0b7b9e;
+    background-color: #eaeaea;
+    border: 3px solid #00447c;
  }
 
 form {
@@ -220,7 +261,10 @@ form {
 	margin: 0 auto;
 }
  form input[type="submit"] {
- 	width:250px;
+    width: 250px;
+    color: #eaeaea;
+    background-color: #0b7b9e;
+    border: 2px solid #00447c;
  }
 
  .submit-button-wrapper {
@@ -232,3 +276,57 @@ form {
  	height:1px;
  	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
  }
+.endline {
+    border: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
+}
+
+ .container.end {
+    max-width: 100%;
+    background-color: #212121;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+
+h3 {
+	font-family: 'Libre Baskerville', serif;
+	color: #eaeaea;
+	font-size: 15px;
+}
+
+.links h3 {
+    margin: 0px 15px;
+    padding: 15px;
+}
+
+
+
+
+
+
+footer {
+	background-color: #212121;
+	width: 100%;
+}
+
+footer ul {
+    margin: 0px auto;
+    text-align: center;
+    padding: 25px;
+}
+
+li.copyr {
+    padding-right: 850px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px;
+    letter-spacing: 0.3px;
+    font-size: 12px;
+    color: #eaeaea;
+}
+
