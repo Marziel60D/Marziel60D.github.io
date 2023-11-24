@@ -26,3 +26,5 @@ function clickListener(event) {
 let submitButton = document.querySelector('#submit-button');
 
 submitButton.addEventListener('click', clickListener);
+
+
