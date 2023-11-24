@@ -23,10 +23,15 @@ nav {
 	z-index: 5;
 	width: 100%;
 }
+img.nav_logo {
+    margin-right: 250px;
+    margin-top: -25px;
+    margin-bottom: -21px;
+}
 
 nav ul li {
 	display: inline-block;
-	margin: 0 50px;
+	margin: 0 40px;
 	padding: 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
