@@ -81,11 +81,33 @@ nav ul {
 header {
 	top: 70px;
 	position: relative;
-	margin-bottom: 220px;
+	margin-bottom: 170px;
 	background-image: url('images/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-y: -110px;
+	background-position-y: -315px;
+}
+
+.col-sm.matic {
+    margin-top: 70px;
+}
+
+.intro_text {
+    margin-top: 15px;
+    margin-left: 110px;
+}
+element.style {
+}
+p.dichro {
+    color: #212121;
+}
+
+p.solar {
+    color: #dddace;
+}
+
+p.solar, p.dichro {
+    display: inline;
 }
 
 h1 {
@@ -125,13 +147,10 @@ figcaption {
 
 .intro_img {
     box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
-    margin-top: 45px;
+    margin-top: 75px;
+    margin-left: -60px;
 }
 
-.intro_text {
-    margin-top: 67px;	
-    margin-left: 20px;
-}
 
 .skill_list {
 	text-align: center;
