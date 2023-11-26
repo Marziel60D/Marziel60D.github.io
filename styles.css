@@ -130,7 +130,7 @@ header {
 /*newlinw*/
 .menu {
     width: 100%;
-    background-color: #f2f3f4;
+	background-image: linear-gradient(to bottom, #eaeaea, #0b7b9e, #00447c);
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
