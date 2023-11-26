@@ -12,7 +12,7 @@ body, ul {
 
 }
 
-h1, h2, h3, .nav_list {
+h1, h2, h3, h5, .nav_list {
 	font-family: 'Libre Baskerville', serif;
 }
 
@@ -121,9 +121,9 @@ ul li {
 }
 
 .button{
-	border: 1px solid black;
+	border: 2px solid #002756;
 	text-decoration: none;
-	color: black;
+	color: #00447c;
 	padding: 10px 30px;
 	margin-top: 40px;
 	display: inline-block;
@@ -132,10 +132,25 @@ ul li {
 }
 
 .button:hover {
-	background: black;
-	color: white;
+	background: #00447c;
+	color: #dddace;
 }
 
+.blue .button{
+	border: 2px solid #c6c3b6;
+	text-decoration: none;
+	color: #dddace;
+	padding: 10px 30px;
+	margin-top: 40px;
+	display: inline-block;
+	border-radius: 20px;
+	transition: background 0.5s ease-in-out, color 0.5s;
+}
+
+.blue .button:hover {
+	background: #dddace;
+	color: #002756;
+}
 
 
 
@@ -283,3 +298,40 @@ footer p {
 }
 
 
+h5.jm, h5.sam, h5.rj, h5.dan, h5.mac {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 2px 12px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+p.titles {
+    margin-top: 5px;
+}
+
+h5.jm {
+	background-color: #858585;
+    color: #ffc61f;
+}
+
+h5.sam {
+    background-color: #787661;
+    color: #7f0116;
+}
+
+h5.rj {
+    background-color: #ccebfa;
+    color: #007832;
+}
+
+h5.dan {
+    background-color: #213c50;
+    color: #feffff;
+}
+
+h5.mac {
+    background-color: #009cff;
+    color: #212121;
+}
