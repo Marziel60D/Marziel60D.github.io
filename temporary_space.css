@@ -18,25 +18,24 @@ img {
 }
 
 nav {
-    background-color: #212121;
-    position: fixed;
-    z-index: 5;
-    width: 100%;
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
 }
 img.nav_logo {
-	margin-left: -175px;
-    margin-bottom: -66px;
+    margin-right: 250px;
+    margin-top: -25px;
+    margin-bottom: -21px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 12px 40px;
-    margin-top: 0px;
-    padding: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    width: 25%;
+	display: inline-block;
+	margin: 0 40px;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
 }
 
 nav ul li a{
@@ -56,8 +55,9 @@ nav ul li a:hover {
 }
 
 nav ul {
-    text-align: center;
-    padding: 0px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px;
 }
 
 
@@ -195,19 +195,21 @@ header {
 
 
 .links-and-contacts {
-    display: grid;
-    grid-template-columns: 100%;
+	display:grid;
+	grid-template-columns: 60% 40%;
 }
 
 .links {
-    justify-self: center;
+	justify-self: center;
+    margin: -26px 0px;
     padding: 0;
 
 }
 
 .links ul li {
     display: inline-block;
-    margin-top: 28px;
+    margin: 20px 25px;
+    padding: 0;
 }
 
 .links ul li a img {
@@ -222,7 +224,8 @@ header {
 }
 
 .contact {
-	justify-self: center;
+	justify-self: left;
+    margin: -23px -16px;
     padding: 0;
 }
 
@@ -234,6 +237,11 @@ header {
 	padding:0;
 }
 
+@media (max-width:650px) {
+	.links-and-contacts{
+		grid-template-columns: 100%;
+	}
+}
 
 .profile-picture {
     border-radius: 50%;
@@ -315,14 +323,17 @@ footer {
 footer ul {
     margin: 0px auto;
     text-align: center;
-    padding: 10px;
+    padding: 25px;
 }
 
+li.copyr {
+    padding-right: 850px;
+}
 
 footer ul li {
     display: inline-block;
-    padding: 0px 20px;
-    margin-bottom: 20px;
+    margin: 0px 0px;
+    padding: 0px;
     letter-spacing: 0.3px;
     font-size: 12px;
     color: #eaeaea;
