@@ -11,94 +11,108 @@
 
 
 	<body>
+		<nav>
+			<ul>
+				<li><img class="nav_logo" src="files/logo.png"></li>
+				<li class="empty"> </li>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Me</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="files/" download="Mark_Daniel_Camposano_CV.pdf" class="buttoncv">Download CV</a></li>
+			</ul>
+		</nav>
 
 		<main>
 
-			<section>
-				<div>my picture</div>
+			<div class="main_grid">
 
+				<section class="nontouch">
+					<div>my picture</div>
 
-
-				<div>
-					<h2>Contact information</h2>
-					<!-- first section for info -->
-					<section>
-						<ul>
-							<li>Email</li>
-							<li>Phone</li>
-							<li>Address</li>
-						</ul>
-					</section>
-					<!-- second section for info -->
-					<section>
-						<h2>Visit my social profile and get connected.</h2>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</section>
-				</div>
-			</section> <!-- end of non touch contact -->
-
-			
-
-
-
-
-
-			<section> <!-- start of touch contact -->
-				<form>
-					<div class="inline">
-						<label for="formname">Name:</label><input type="text" placeholder="Enter your name" 
-							id="formname" name="formname">
-					</div>
-
-					<div class="inline">
-						<label for="formemail">Email:</label><input type="email" placeholder="Enter your email" 
-							id="formemail" name="formemail">
-					</div>
-
-					<div class="inline">
-						<label for="formmessage">Message:</label> <textarea cols="30" rows="5" 
-							id="formmessage" name="formmessage"></textarea>
-					</div>
-
-					<div  class="inline">
-						<label for="subject">Subject:</label>
-						<input type="text" list="subjects" id="subject" placeholder="Enter your subject">
-						<datalist id="subjects">
-							<option value="returns">
-							<option value="faulty items">
-							<option value="deliviery">
-							<option value="order tracking">
-							<option value="advice">
-							<option value="other">
-						</datalist>
-					</div>
 
 
 					<div>
-						<p>How would you like us to respond?</p>
-
-						<label for="phoneResponse">Phone</label>
-						<input type="radio" id="phoneResponse" name="response" value="phone">
-
-						<label for="emailResponse">Email</label>
-						<input type="radio" id="emailResponse" name="response" value="email">
+						<h2>Contact information</h2>
+						<!-- first section for info -->
+						<section>
+							<ul>
+								<li>Email</li>
+								<li>Phone</li>
+								<li>Address</li>
+							</ul>
+						</section>
+						<!-- second section for info -->
+						<section>
+							<h2>Visit my social profile and get connected.</h2>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</section>
 					</div>
+				</section> <!-- end of non touch contact -->
 
-					<div>
-						<input type="submit">
-						<input type="reset">
-						<!-- <button type="submit">Submit</button> -->
-					</div>
-				</form>
 				
-			</section>
+
+
+
+
+
+				<section class="touch"> <!-- start of touch contact -->
+					<form>
+						<div class="inline">
+							<label for="formname">Name:</label><input type="text" placeholder="Enter your name" 
+								id="formname" name="formname">
+						</div>
+
+						<div class="inline">
+							<label for="formemail">Email:</label><input type="email" placeholder="Enter your email" 
+								id="formemail" name="formemail">
+						</div>
+
+						<div  class="inline">
+							<label for="subject">Subject:</label><input type="text" list="subjects" id="subject"placeholder="Enter your subject">
+							<datalist id="subjects">
+								<option value="hire">
+								<option value="invitation">
+								<option value="application">
+								<option value="recomendation">
+								<option value="collaboration">
+								<option value="other">
+							</datalist>
+						</div>
+
+						<div class="inline">
+							<label for="formmessage">Message:</label><textarea cols="30" rows="5" 
+								id="formmessage" name="formmessage"></textarea>
+						</div>
+
+
+
+
+						<div>
+							<p>How would you like me to respond?</p>
+
+							<label for="phoneResponse">Phone</label>
+							<input type="radio" id="phoneResponse" name="response" value="phone">
+
+							<label for="emailResponse">Email</label>
+							<input type="radio" id="emailResponse" name="response" value="email">
+						</div>
+
+						<div>
+							<input type="submit">
+							<input type="reset">
+							<!-- <button type="submit">Submit</button> -->
+						</div>
+					</form>
+					
+				</section>
+			</div>
 
 
 		</main>

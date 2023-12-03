@@ -1,24 +1,123 @@
 
 html {
 	background: white;
+	font-size: 16px;
 }
 body {
 	font-family: 'Signika Negative', sans-serif;
-	font-family: 'Signika Negative', sans-serif;
 	background: #eaeaea;
-	background: #eaeaea;
-	max-width: 95%;
 	margin: 0 auto;
 }
+
+h2 {
+	font-size: 20px;
+	font-family: 'Libre Baskerville', serif;
+}
+nav {
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+img.nav_logo {
+    margin-right: 250px;
+    margin-top: -25px;
+    margin-bottom: -21px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 40px;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+nav ul li a{
+    border: 0px solid #035b7a;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+nav ul li a:hover {
+	background: #dddace;
+	color: #00447c;
+	font-weight: bold;
+}
+
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px;
+}
+
+.buttoncv {
+    border: 2px solid #00447c;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+.buttoncv:hover {
+	background: #0b7b9e;
+	color: #f2f3f4;
+}
+
 
 main {
 /* target/context = result	*/
 /* 680/1000 = 0.68 */
-
-	width: 68%;
-	display: inline-block;
-	padding: 10px;
+	padding-top: 110px;
+    width: 100%;
+	background-color: red;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
 }
+
+.main_grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+section.nontouch {
+    background: grey;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 10px;
+}
+
+section.touch {
+    background: blue;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 form {
@@ -39,12 +138,8 @@ form > div {
 }
 
 input[type="text"], input[type="email"], textarea {
-	padding: 10px;
-	width: 400px;
+    padding: 10px;
+    width: 50%;
 }
 
-@media (min-width:600px) {
-	li {
-		color: red;
-	}
 }
