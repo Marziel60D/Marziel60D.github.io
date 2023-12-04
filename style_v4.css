@@ -100,6 +100,7 @@ section.nontouch {
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 10px;
+	padding-top: 10%;
 }
 
 section.touch {
@@ -179,8 +180,16 @@ button img.iconTouch {
     transition: all ease-in-out .2s;	
 }
 
-
-
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.social_links li img {
+    width: 50%;
+    height: auto;
+    margin: 4% -38%;
+}
 
 
 
