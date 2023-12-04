@@ -36,9 +36,9 @@
 						<!-- first section for info -->
 						<section>
 							<ul>
-								<li>Email</li>
-								<li>Phone</li>
-								<li>Address</li>
+								<li><img src="icons/email.png">my email</li>
+								<li><img src="icons/phone.png">Phone</li>
+								<li><img src="icons/address.png">Address</li>
 							</ul>
 						</section>
 						<!-- second section for info -->
@@ -65,17 +65,17 @@
 				<section class="touch"> <!-- start of touch contact -->
 					<form>
 						<div class="inline">
-							<label for="formname">Name:</label><input type="text" placeholder="Enter your name" 
+							<label for="formname"><img class="iconTouch" src="icons/name.png"></label><input type="text" placeholder="Enter your name" 
 								id="formname" name="formname">
 						</div>
 
 						<div class="inline">
-							<label for="formemail">Email:</label><input type="email" placeholder="Enter your email" 
+							<label for="formemail"><img class="iconTouch" src="icons/email.png"></label><input type="email" placeholder="Enter your email" 
 								id="formemail" name="formemail">
 						</div>
 
 						<div  class="inline">
-							<label for="subject">Subject:</label><input type="text" list="subjects" id="subject"placeholder="Enter your subject">
+							<label for="subject"><img class="iconTouch" src="icons/subject.png"></label><input type="text" list="subjects" id="subject"placeholder="Enter your subject">
 							<datalist id="subjects">
 								<option value="hire">
 								<option value="invitation">
@@ -87,8 +87,7 @@
 						</div>
 
 						<div class="inline">
-							<label for="formmessage">Message:</label><textarea cols="30" rows="5" 
-								id="formmessage" name="formmessage"></textarea>
+							<label for="formmessage"><img class="iconTouch" src="icons/message.png"></label><textarea cols="30" rows="5" id="formmessage" name="formmessage"></textarea>
 						</div>
 
 
@@ -105,8 +104,17 @@
 						</div>
 
 						<div>
-							<input type="submit">
-							<input type="reset">
+							<span class="inputWrapper">
+								<button type="submit" class="inputBut"><img class="iconTouch" src="icons/send.png"></button>
+								<h5>submit</h5>								
+							</span>
+		
+
+							<span class="inputWrapper">
+								<button type="reset" class="inputBut"><img class="iconTouch" src="icons/reset.png"></button>
+								<h5>reset</h5>									
+							</span>
+
 							<!-- <button type="submit">Submit</button> -->
 						</div>
 					</form>
@@ -121,7 +129,29 @@
 
 
 
+	<hr class="endline">
 
+		<div class="container end">
+			<div class="links-and-contacts">
+				<a href="#top"><img src="files/logo_orgnl.png" width="80" height="80" /> </a>			
+				<div class="links">
+					<ul>
+						<li><a href="https://www.instagram.com/marziel60d" target=”_blank”>Instagram</a></li>
+
+						<li><a href="https://www.linkedin.com/in/md-camposano" target=”_blank”>LinkedIn</a></li>
+
+						<li><a href="https://github.com/Marziel60D" target=”_blank”>GitHub</a></li>
+
+						<li><a href="https://www.pinterest.ph/Marziel60D" target=”_blank”>Pinterest</a></li>						
+					</ul>
+
+				</div>
+			</div>
+
+			<footer>
+					<p>&copy 2023 Mark Daniel Camposano - md.camposano@outlook.com</p>
+			</footer>
+		</div>	
 
 
 	</body>

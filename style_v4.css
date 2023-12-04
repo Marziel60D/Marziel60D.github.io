@@ -1,11 +1,11 @@
 
 html {
-	background: white;
+	background: #eaeaea;
 	font-size: 16px;
 }
 body {
 	font-family: 'Signika Negative', sans-serif;
-	background: #eaeaea;
+	background: #c6c3b6;
 	margin: 0 auto;
 }
 
@@ -76,8 +76,9 @@ main {
 /* target/context = result	*/
 /* 680/1000 = 0.68 */
 	padding-top: 110px;
+    padding-bottom: 50px;
     width: 100%;
-	background-color: red;
+	background-color: #0b7b9e;
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
@@ -89,16 +90,41 @@ main {
 	grid-template-columns: 50% 50%;
 }
 
+
+section.nontouch, section.touch {
+	color: #f2f3f4;
+
+}
 section.nontouch {
-    background: grey;
+    background: #212121;
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 10px;
 }
 
 section.touch {
-    background: blue;
+    background: #212121;
     margin: 10px;
+}
+
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+section ul li img  {
+    width: 15%;
+    height: auto;
+	vertical-align: middle;
+}
+img.iconTouch {
+    width: 60%;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 12px;
+    margin-top: -7px;
 }
 
 
@@ -106,8 +132,52 @@ section.touch {
 
 
 
+button.inputBut {
+    width: 20%;
+    height: auto;
+    vertical-align: middle;
+    margin: 5px -60px;
+}
+
+button img.iconTouch {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.inputWrapper {
+    justify-self: center;
+    padding: 40px;
+    position: relative;
+}
 
 
+.inputBut {
+	border: none;
+	transition: all ease-in-out .2s;
+    background-color: transparent; 
+    color: #3498db; 
+    font-size: 1.5em; 
+}
+
+.inputBut:hover {
+	filter: brightness(.75);
+}
+
+.inputWrapper:hover > h5 {
+	visibility: visible;
+}
+
+.inputWrapper >h5 {
+	position: absolute;
+    top: 7%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: #eaeaea;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;	
+}
 
 
 
@@ -141,5 +211,110 @@ input[type="text"], input[type="email"], textarea {
     padding: 10px;
     width: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*newline*/
+ hr {
+ 	border: 0;
+ 	height:1px;
+ 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+
+.links-and-contacts {
+    display: grid;
+    grid-template-columns: 100%;
+    list-style: none;
+    margin-top: -40px;
+}
+
+.links-and-contacts a {
+    text-align: center;
+    margin: 40px auto;
+}
+
+
+
+.links {
+	justify-self: center;
+    margin: -26px 0px;
+    padding: 0;
+    margin-bottom: -70px;
+
+}
+
+.links ul li {
+    display: inline-block;
+    margin: 20px 25px;
+    padding: 0;
+	font-size: 17px;
+}
+
+.links ul li a {
+	size: 50px;
+	color: #eaeaea;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+
+.contact {
+	justify-self: left;
+    margin: -23px -16px;
+    padding: 0;
+}
+
+.link-list {
+
+	padding:0;
+}
+
+.endline {
+    border: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
+}
+
+ .container.end {
+ 	background-color: #212121;
+	font-family: 'Libre Baskerville', serif;
+    max-width: 100%;
+    padding-top: 85px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+footer {
+	width: 100%;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 50px;
+    padding: 25px;
+    letter-spacing: 0.3px;
+	font-size: .75em;
+    color: #eaeaea;
 
 }
