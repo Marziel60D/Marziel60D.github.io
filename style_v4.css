@@ -78,7 +78,7 @@ main {
 	padding-top: 110px;
     padding-bottom: 50px;
     width: 100%;
-	background-color: #0b7b9e;
+	background-image: radial-gradient(circle, #0b7b9e, #035b7a, #00447c,#002756);
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
@@ -93,8 +93,17 @@ main {
 
 section.nontouch, section.touch {
 	color: #f2f3f4;
+}
+section.nontouch h4 {
+	position: relative;
+    top: -20%;
+    left: -15%;
+    font-size: 20px;
+    margin: 0px auto;
+    font-family: 'Libre Baskerville', serif;
+}
+section.touch h4 {
 	
-
 }
 section.nontouch {
     background: #212121;
