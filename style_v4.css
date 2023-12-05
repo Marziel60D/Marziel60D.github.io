@@ -93,14 +93,32 @@ main {
 
 section.nontouch, section.touch {
 	color: #f2f3f4;
+	
 
 }
 section.nontouch {
     background: #212121;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 70% 30%;
     margin: 10px;
-	padding-top: 10%;
+    padding-top: 10%;
+    position: relative;
+    background-image: url(images/myposter.png);
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    background-position-y: 102%;
+    background-position-x: -41%;
+}
+section.nontouch h2 {
+	font-size: 15px;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.nontouch_box {
+    position: relative;
+    left: 206px;
+    top: 15%;
 }
 
 section.touch {
@@ -116,7 +134,7 @@ ul {
 }
 
 section ul li img  {
-    width: 15%;
+    width: 12%;
     height: auto;
 	vertical-align: middle;
 }
@@ -127,7 +145,6 @@ img.iconTouch {
     margin-left: 12px;
     margin-top: -7px;
 }
-
 
 
 
@@ -181,17 +198,22 @@ button img.iconTouch {
 }
 
 .social_links {
-  display: flex;
-  align-items: center;
-  justify-content: center
+	display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10%;
+    position: relative;
+    left: -8%;
+    bottom: 5%;
 }
-.social_links li img {
+
+.social_links span img {
     width: 50%;
     height: auto;
-    margin: 4% -38%;
 }
 
+.social_links div {
 
+}
 
 
 
