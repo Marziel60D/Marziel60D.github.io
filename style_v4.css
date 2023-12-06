@@ -91,48 +91,32 @@ main {
 }
 
 
-section.nontouch, section.touch {
+.nontouch, .touch {
 	color: #f2f3f4;
-}
-section.nontouch h4 {
-	position: relative;
-    top: -20%;
-    left: -15%;
-    font-size: 20px;
-    margin: 0px auto;
-    font-family: 'Libre Baskerville', serif;
-}
-section.touch h4 {
-	
-}
-section.nontouch {
-    background: #212121;
-    display: grid;
-    grid-template-columns: 70% 30%;
+	background: #212121;
     margin: 10px;
-    padding-top: 10%;
-    position: relative;
-    background-image: url(images/myposter.png);
-    background-repeat: no-repeat;
-    background-size: 75% auto;
-    background-position-y: 102%;
-    background-position-x: -41%;
-}
-section.nontouch h2 {
-	font-size: 15px;
-    position: relative;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-.nontouch_box {
-    position: relative;
-    left: 206px;
-    top: 15%;
 }
 
-section.touch {
-    background: #212121;
-    margin: 10px;
+section.nontouch h4, section.touch h4 {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+
+section.nontouch h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: -7%;
+}
+
+li.nontouch_icon {
+    position: relative;
+    left: 17%;
+}
+li span {
+    margin-left: 8%;
 }
 
 
@@ -143,15 +127,15 @@ ul {
 }
 
 section ul li img  {
-    width: 12%;
+    width: 10%;
     height: auto;
 	vertical-align: middle;
 }
 img.iconTouch {
-    width: 60%;
+	width: 50%;
     height: auto;
     vertical-align: middle;
-    margin-left: 12px;
+    margin-left: 45px;
     margin-top: -7px;
 }
 
@@ -160,22 +144,24 @@ img.iconTouch {
 
 
 button.inputBut {
-    width: 20%;
-    height: auto;
-    vertical-align: middle;
-    margin: 5px -60px;
+    width: fit-content;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    margin: 0;
+    padding: 0;
 }
 
 button img.iconTouch {
-    width: 50%;
+    width: 35%;
     height: auto;
-    margin-top: 20px;
 }
 
 .inputWrapper {
-    justify-self: center;
-    padding: 40px;
+    padding: 0px;
     position: relative;
+    bottom: 20px;
+    margin: auto -28px;
 }
 
 
@@ -196,35 +182,36 @@ button img.iconTouch {
 }
 
 .inputWrapper >h5 {
-	position: absolute;
-    top: 7%;
-    left: 52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
     transform: translate(-50%, -50%);
     color: #eaeaea;
     visibility: hidden;
     z-index: 2;
-    transition: all ease-in-out .2s;	
+    transition: all ease-in-out .2s;
 }
 
 .social_links {
-	display: grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     padding: 10%;
-    position: relative;
-    left: -8%;
-    bottom: 5%;
 }
 
 .social_links span img {
-    width: 50%;
+    width: 45%;
     height: auto;
 }
 
 .social_links div {
 
 }
-
-
+.inputBut h5 {
+	font-size: 10px;
+    background-color: white;
+    width: fit-content;
+}
 
 
 
@@ -248,11 +235,18 @@ form > div {
 }
 
 input[type="text"], input[type="email"], textarea {
-    padding: 10px;
-    width: 50%;
+    padding: 5px;
+    width: 45%;
 }
 
-
+.response {
+    margin-left: 22px;
+}
+.inputWrapper_box {
+	position: relative;
+    top: 5px;
+    left: 41%;
+}
 
 
 

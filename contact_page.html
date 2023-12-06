@@ -27,31 +27,31 @@
 			<div class="main_grid">
 
 				<section class="nontouch">
+					<h4>Contact Information</h4>
 					
 
 
 
 					<div class="nontouch_box">
-						<h4>Contact Information</h4>
+						
 					
 						<!-- first section for info -->
 						<section>
 							<ul>
-								<li><img src="icons/email.png">&#160&#160md.camposano@outlook.com</li>
-								<li><img src="icons/phone.png">&#160&#160&#160+639665386916</li>
-								<li><img src="icons/address.png">&#160&#160Albay, Philippines</li>
+								<li class="nontouch_icon"><img src="icons/email.png"><span>md.camposano@outlook.com</span></li>
+								<li class="nontouch_icon"><img src="icons/phone.png"><span>+639665386916</span></li>
+								<li class="nontouch_icon"><img src="icons/address.png"><span>Albay, Philippines</span></li>
 							</ul>
 						</section>
 						<!-- second section for info -->
-						<h2>Visit my social profile<br>&#160&#160&#160&#160&#160&#160&#160
-					&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160and get connected.</h2>
+						<h2>Visit my social profile and get connected.</h2>
 						<section class="social_links">
-							<span><a href="https://www.linkedin.com/in/md-camposano/" target=”_blank”><img src="images/LIn.svg" width="80" height="80" /></a></span>
-							<span><a href="https://github.com/Marziel60D" target=”_blank”><img src="images/GH.svg" width="80" height="80" /> </a></span>
-							<span><a href="https://www.instagram.com/marziel60d" target=”_blank”><img src="images/Insta.svg" width="80" height="80" /> </a></span>
-							<span><a href="https://m.me/DanielMcLure.II" target=”_blank”><img src="images/mssgr.svg" width="80" height="80" /> </a></span>
-							<span><a href="https://www.youtube.com/@thepoetonthenakedtruth2842" target=”_blank”><img src="images/YT.svg" width="80" height="80" /> </a></span>
-							<span><a href="https://www.pinterest.ph/Marziel60D" target=”_blank”><img src="images/Pin.svg" width="80" height="80" /> </a></span>
+							<span align="center"><a href="https://www.linkedin.com/in/md-camposano/" target=”_blank”><img src="images/LIn.svg" width="80" height="80" /></a></span>
+							<span align="center"><a href="https://github.com/Marziel60D" target=”_blank”><img src="images/GH.svg" width="80" height="80" /> </a></span>
+							<span align="center"><a href="https://www.instagram.com/marziel60d" target=”_blank”><img src="images/Insta.svg" width="80" height="80" /> </a></span>
+							<span align="center"><a href="https://m.me/DanielMcLure.II" target=”_blank”><img src="images/mssgr.svg" width="80" height="80" /> </a></span>
+							<span align="center"><a href="https://www.youtube.com/@thepoetonthenakedtruth2842" target=”_blank”><img src="images/YT.svg" width="80" height="80" /> </a></span>
+							<span align="center"><a href="https://www.pinterest.ph/Marziel60D" target=”_blank”><img src="images/Pin.svg" width="80" height="80" /> </a></span>
 							
 
 							
@@ -79,6 +79,11 @@
 								id="formemail" name="formemail">
 						</div>
 
+						<div class="inline">
+							<label for="formphone"><img class="iconTouch" src="icons/phone.png"></label><input type="email" placeholder="Enter your mobile number" 
+								id="formemail" name="formemail">
+						</div>						
+
 						<div  class="inline">
 							<label for="subject"><img class="iconTouch" src="icons/subject.png"></label><input type="text" list="subjects" id="subject"placeholder="Enter your subject">
 							<datalist id="subjects">
@@ -92,13 +97,14 @@
 						</div>
 
 						<div class="inline">
-							<label for="formmessage"><img class="iconTouch" src="icons/message.png"></label><textarea cols="30" rows="5" id="formmessage" name="formmessage" placeholder="Your Message" ></textarea>
+							<label for="formmessage"><img class="iconTouch" src="icons/message.png" style="position:relative; bottom:70px;">
+							</label><textarea cols="30" rows="5" id="formmessage" name="formmessage" placeholder="Your Message" ></textarea>
 						</div>
 
 
 
 
-						<div>
+<!-- 						<div class="response">
 							<p>How would you like me to respond?</p>
 
 							<label for="phoneResponse">Phone</label>
@@ -106,19 +112,21 @@
 
 							<label for="emailResponse">Email</label>
 							<input type="radio" id="emailResponse" name="response" value="email">
-						</div>
+						</div> -->
 
-						<div>
-							<span class="inputWrapper">
-								<button type="submit" class="inputBut"><img class="iconTouch" src="icons/send.png"></button>
-								<h5>submit</h5>								
-							</span>
+						<div class="inputWrapper_box">
+							
+								<button align="center" type="submit" class="inputBut"><img class="iconTouch" src="icons/send.png"><h5>submit</h5></button>
+																
+							
 		
 
-							<span class="inputWrapper">
-								<button type="reset" class="inputBut"><img class="iconTouch" src="icons/reset.png"></button>
-								<h5>reset</h5>									
-							</span>
+							
+								<button type="reset" class="inputBut"><img class="iconTouch" src="icons/reset.png"><h5 class="textBut">reset</h5></button>
+
+
+																	
+					
 
 							<!-- <button type="submit">Submit</button> -->
 						</div>
