@@ -135,10 +135,11 @@ img.iconTouch {
 	width: 50%;
     height: auto;
     vertical-align: middle;
-    margin-left: 45px;
-    margin-top: -7px;
 }
-
+label img.iconTouch {
+    position: relative;
+    left: 25px;
+}
 
 
 
@@ -161,7 +162,7 @@ button img.iconTouch {
     padding: 0px;
     position: relative;
     bottom: 20px;
-    margin: auto -28px;
+    left: -183px;
 }
 
 
@@ -183,7 +184,7 @@ button img.iconTouch {
 
 .inputWrapper >h5 {
     position: absolute;
-    top: 50%;
+    top: 93%;
     left: 50%;
     font-size: 12px;
     transform: translate(-50%, -50%);
@@ -207,9 +208,8 @@ button img.iconTouch {
 .social_links div {
 
 }
-.inputBut h5 {
-	font-size: 10px;
-    background-color: white;
+h5.textBut {
+    font-size: 10px;
     width: fit-content;
 }
 
@@ -249,9 +249,16 @@ input[type="text"], input[type="email"], textarea {
 }
 
 
+.inline input, textarea {
+    background-color: #eaeaea;
+    font-family: 'Signika Negative';
+    border-radius: 3px;
+    border: 3px solid #00447c;
+}
 
-
-
+::placeholder {
+  color: #0b7b9e;
+}
 
 
 

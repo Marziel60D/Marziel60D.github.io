@@ -1,0 +1,150 @@
+html {
+	background: #eaeaea;
+	font-size: 16px;
+}
+body {
+	font-family: 'Signika Negative', sans-serif;
+	background: #c6c3b6;
+	margin: 0 auto;
+}
+
+/*h2 {
+	font-size: 20px;
+	font-family: 'Libre Baskerville', serif;
+}*/
+nav {
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+img.nav_logo {
+    margin-right: 250px;
+    margin-top: -25px;
+    margin-bottom: -21px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 40px;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+nav ul li a{
+    border: 0px solid #035b7a;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+nav ul li a:hover {
+	background: #dddace;
+	color: #00447c;
+	font-weight: bold;
+}
+
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px;
+}
+
+.buttoncv {
+    border: 2px solid #00447c;
+    text-decoration: none;
+    color: #c6c3b6;
+    padding: 5px 10px;
+    margin-top: -25px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+.buttoncv:hover {
+	background: #0b7b9e;
+	color: #f2f3f4;
+}
+
+
+main {
+/* target/context = result	*/
+/* 680/1000 = 0.68 */
+	padding-top: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    color: #eaeaea;
+    background-color: #0c0c0c;
+}
+
+.main_grid {
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+.myposter {
+	width: 410px;
+	height: auto;
+}
+
+
+
+
+.main_text {
+    margin-top: 15%;
+}
+.main_text h3 {
+    color: #0b7b9e;
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+img.hi_text {
+    width: 400px;
+    height: auto;
+}
+
+.main_text h2 {
+    color: #eaeaea;
+    font-size: 40px;
+    padding: 0;
+    margin-top: -3px;
+}
+.main_text p {
+    margin-top: -9px;
+}
+
+.homebutt ul li {
+	display: inline-block;
+    margin: 0 20px;
+    padding: 3px;
+}
+
+.homebutt ul li a{
+    border: 2px solid #eaeaea;
+    text-decoration: none;
+    color: #f2f3f4;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out, color 0.5s;
+}
+.homebutt ul li a:hover {
+	border: 2px solid #0b7b9e;
+	background: #0b7b9e;
+	color: #eaeaea;
+	font-weight: lighter;
+}
+
+.homebutt ul {
+	margin: 30px auto;
+    padding: 0;
+    margin-left: -20px;}
