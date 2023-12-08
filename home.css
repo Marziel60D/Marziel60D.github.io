@@ -71,7 +71,7 @@ nav ul {
 }
 
 
-main {
+main, .not_main {
 /* target/context = result	*/
 /* 680/1000 = 0.68 */
 	padding-top: 70px;
@@ -90,7 +90,7 @@ main {
 	grid-template-columns: 40% 60%;
 }
 .myposter {
-	width: 410px;
+	width: 435px;
 	height: auto;
 }
 
@@ -98,7 +98,7 @@ main {
 
 
 .main_text {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .main_text h3 {
     color: #0b7b9e;
@@ -138,8 +138,8 @@ img.hi_text {
     transition: background 0.5s ease-in-out, color 0.5s;
 }
 .homebutt ul li a:hover {
-	border: 2px solid #0b7b9e;
-	background: #0b7b9e;
+	border: 2px solid #00447c;
+	background: #00447c;
 	color: #eaeaea;
 	font-weight: lighter;
 }
@@ -147,4 +147,89 @@ img.hi_text {
 .homebutt ul {
 	margin: 30px auto;
     padding: 0;
-    margin-left: -20px;}
+    margin-left: -20px;
+}
+
+
+/*hr {
+    width: 100%;
+    border: 0;
+    height: 70px;
+    margin:0;
+    background-image: linear-gradient(to bottom, #0c0c0c, #212121, #eaeaea);
+}
+*/
+.not_main h2, .notmain_grid div h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+.not_main h2 {
+    text-align: center;
+    color: #0b7b9e;
+    font-size: 32px;
+    margin: 15px;
+}
+.notmain_grid div h2 {
+    font-size: 16px;
+    margin-bottom: -5px;
+    color: #eaeaea;
+    text-align: left;
+}
+
+
+
+.notmain_grid {
+	display: grid;
+	grid-template-columns: 50% 50%;	
+}
+
+.notmain_grid div {
+    margin: 0 30px;
+}
+.notmain_grid div ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notmain_grid div ul li {
+    background-color: #212121;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+
+.notmain_grid .edu ul li p, ul li p a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #0b7b9e;
+    background-color: #0b7b9e;
+    width: fit-content;
+    padding: 05px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+.notmain_grid div ul li h4 {
+	margin: 0;
+}
+
+.skills {
+    width: max-content;
+}
+
+.skills ul li {
+    width: 250px;
+}
+
+.inline {
+    display: inline;
+}
+
+.skills ul li p img {
+    vertical-align: middle;
+    width: 40px;
+    height: auto;
+}
