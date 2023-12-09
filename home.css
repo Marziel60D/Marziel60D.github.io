@@ -200,7 +200,7 @@ img.hi_text {
 }
 
 
-.notmain_grid .edu ul li p, ul li p a {
+.course_list, ul li p a {
     text-decoration: none;
     color: inherit;
     border: 2px solid #0b7b9e;
@@ -210,7 +210,6 @@ img.hi_text {
     border-radius: 5px;
     font-size: 12px;
 }
-
 
 .notmain_grid div ul li h4 {
 	margin: 0;
@@ -222,6 +221,9 @@ img.hi_text {
 
 .skills ul li {
     width: 250px;
+}
+.skills ul li p {
+    margin: 8px;
 }
 
 .inline {
