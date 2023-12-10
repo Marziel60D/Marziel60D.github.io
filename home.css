@@ -159,6 +159,10 @@ img.hi_text {
     background-image: linear-gradient(to bottom, #0c0c0c, #212121, #eaeaea);
 }
 */
+
+
+/*not main section*/
+
 .not_main h2, .notmain_grid div h2 {
     font-family: 'Libre Baskerville', serif;
 }
@@ -179,7 +183,8 @@ img.hi_text {
 
 .notmain_grid {
 	display: grid;
-	grid-template-columns: 50% 50%;	
+	grid-template-columns: 50% 50%;
+
 }
 
 .notmain_grid div {
@@ -235,3 +240,39 @@ img.hi_text {
     width: 40px;
     height: auto;
 }
+
+
+/*not main section+reverse*/
+
+
+.maingrid_reverse {
+	display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 0 6%;
+}
+.mainreverse_text p {
+    margin: 20px;
+    text-align: right;
+}
+.mainreverse_text p.reverse_text {
+	margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #212121;
+    text-align: right;    
+}
+.mainreverse_text .white_title {
+    font-size: 20px;
+    text-align: right;
+	color:#eaeaea;
+}
+.mainreverse_text h2 {
+    font-size: 25px;
+    text-align: right;
+}
+
+.mainreverse_text {
+    justify-self: end;
+    text-align: right;  
+}
+
