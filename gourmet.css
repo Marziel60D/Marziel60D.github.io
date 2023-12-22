@@ -6,6 +6,7 @@ body {
 	font-family: 'Signika Negative', sans-serif;
 	background: #c6c3b6;
 	margin: 0 auto;
+    justify-content: center;
 }
 
 /* text-colors */
@@ -23,6 +24,9 @@ body {
 
 /* font site them */
 .font-lb {font-family: 'Libre Baskerville', serif;}
+
+/* font site size  */
+
 
 
 .col-md-4 > img {
@@ -44,26 +48,20 @@ nav.navbar {
 /* navbar repeat */
 
 
-main, .not_main {
-    /* target/context = result	*/
-    /* 680/1000 = 0.68 */
-        padding-top: 70px;
-        padding-bottom: 50px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-        justify-items: center;
-        /* color: #eaeaea;
-        background-color: #0c0c0c; */
-    }
+
+.main, .not_main {
+    padding-top: 70px;
+}
 
 
+.main_text {
+    margin-top: 25%;
+}
 
 .main_grid {
     display: grid;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     margin: auto 10%;
@@ -72,9 +70,9 @@ main, .not_main {
 	width: 435px;
 	height: auto;
 }
-.main_text {
-    margin-top: 20%;
-}
+
+
+
 img.hi_text {
     width: 400px;
     height: auto;
@@ -142,7 +140,10 @@ h2.about_title {
 
 
 
-
+.iconTouch {
+    width: 50%;
+    height: auto;
+}
 
 .modal-main {
     display: grid;
@@ -159,4 +160,53 @@ h2.about_title {
 .modal-content {
 	color: #f2f3f4;
 	background: #212121;
+}
+
+
+
+
+.edu_main_title {
+    font-size: 32px;
+    margin-top: 5%; 
+}
+.edu h2 {
+    font-size: 16px;
+    margin-bottom: -5px;
+    text-align: left;
+}
+.edu {
+    color: #eaeaea;
+}
+
+.edu ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+.edu ul li {
+    background-color: #212121;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.edu ul li h3 {
+    font-size: 18px
+}
+.edu ul li h4 {
+    font-size: 16px
+}
+
+.course_list, ul li p a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #0b7b9e;
+    background-color: #0b7b9e;
+    width: fit-content;
+    padding: 05px;
+    border-radius: 5px;
+    font-size: 12px;
 }

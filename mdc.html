@@ -53,30 +53,31 @@
     </header>
     <!-- header safe -->
 
-
-
-    <main>
-      <div class="main_grid">
-				<div>
-					<img class="myposter" src="images/myposter.png">
-				</div>
-
-				<div class="main_text">
+    <div class="container main">
+      <div class="row main_grid">
+        <div class="col">
+          <img class="myposter" src="images/myposter.png">
+        </div>
+        <div class="col main_text">
 					<h3>Hello, I am</h3>
 					<div>
 						<img class="hi_text" src="images/hi.png">
 					</div>
 					<h2>BSCpE fresh grad</h2>
 
-					<p>Actively emphasizing personal and professional growth and development, and also<br>
-					to leverage my strong passion in programming. Aspiring to be an innovative<br>
-					IT professional with a blend of technical and business proficiency.<br>
-					Committed to learning, growing, and building a successful<br>
+					<p>Actively emphasizing personal and professional growth and development, and also
+					to leverage my strong passion in programming. Aspiring to be an innovative
+					IT professional with a blend of technical and business proficiency.
+					Committed to learning, growing, and building a successful
 					career as an IT professional.</p>
-				</div>
-			</div>
+        </div>
 
-    </main>
+      </div>
+    </div>
+
+    
+
+
 
 
     <div class="not_main" id="about_me">
@@ -100,6 +101,62 @@
 			</div>
 		</div>
 
+
+
+    <div class="container px-4 text-center edu_main">
+      <div class="row gx-5">
+        <h2 class="l-c font-lb edu_main_title">My Educational Qualification</h2>
+
+        <div class="col edu">
+          <div class="p-3">
+            <h2 class="font-lb">Courses</h2>
+            <ul>
+              <li>
+                <h3>Ubiquity Broadband Wireless Specialist</h3>
+                <h4>Ubiquity Networks</h4>
+                <p class="course_list">Duration: 02 Days</p>
+              </li>
+
+              <li>
+                <h3>Programming Essentials</h3>
+                <h4>DICT Sorsogon</h4>
+                <p class="course_list">Duration: 12 Days</p>
+              </li>
+
+              <li>
+                <h3>Practical C++: Learn C++ Basics Step by Step</h3>
+                <h4>Skillshare</h4>
+                <p class="course_list">Duration: 05 Days</p>
+              </li>
+              <li>
+                <p class="course_list"><a href="seminars_page.html">See More</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col edu">
+          <div class="p-3">
+            <h2 class="font-lb">Academic Education</h2>
+            <ul>
+              <li>
+                <h3>BS Computer Engineering</h3>
+                <h4>Bicol University</h4>
+                <p class="course_list">Duration: 04 Years</p>
+              </li>
+
+              <li>
+                <h3>TVL Java Programming NCIII</h3>
+                <h4>Sorsogon Our Lady of Salvation College Inc.</h4>
+                <p class="course_list">Duration: 02 Years</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   
 
 
@@ -115,7 +172,7 @@
 
 
     
-    <div class="container text-center py-5">
+    <!-- <div class="container text-center py-5">
         <div class="row">
 
             <div class="col-md-4">
@@ -158,7 +215,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
 
     <!-- modal safe -->
@@ -192,18 +249,22 @@
         <div class="modal-content">
 
             <div class="modal-header">
-              <h5 class="modal-title">Sign up for exclusive offers!</h5>
+              <h5 class="modal-title">Send me a message</h5>
               <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
             </div>
+
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="nameInput">Your name</label>
-                  <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                  <label for="nameInput"><img class="iconTouch" src="icons/name.png"></label>
+                  <span>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                  </span>
+                  
                 </div>
   
                 <div class="form-group">
-                  <label for="emailInput">Your email</label>
+                  <label for="emailInput"><img class="iconTouch" src="icons/email.png"></label>
                   <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
                 </div>
   
@@ -236,13 +297,13 @@
     </div>
     <!-- modal safe -->
 
-    <footer class="container bg-light py-4">
+    <!-- <footer class="container bg-light py-4">
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>&copy; 2023 Gourmet Burgers &middot;
         <a href="">Home</a> &middot;
         <a href="">Locations</a>
       </p>
-    </footer>
+    </footer> -->
 
 
 
