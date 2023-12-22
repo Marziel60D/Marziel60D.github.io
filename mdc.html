@@ -12,8 +12,9 @@
 
 
   <body>
+    <!-- header safe -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="files/logo.png"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Download CV</a></li>
-                      <li><a class="dropdown-item" href="index.html#about_me">About</a></li>
+                      <li><a class="dropdown-item" href="#about_me">About</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -50,39 +51,60 @@
             </div>
         </nav>
     </header>
+    <!-- header safe -->
 
 
-    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
 
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/carousel1.jpg" alt="image 1">
-          <div class="carousel-caption">
-            <h5>Made to order</h5>
-            <p>Using only the finest ingredients</p>
-          </div>
-        </div>
+    <main>
+      <div class="main_grid">
+				<div>
+					<img class="myposter" src="images/myposter.png">
+				</div>
 
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/carousel2.jpg" alt="image 1">
-          <div class="carousel-caption">
-            <h5>over 50 types on our menu</h5>
-            <p>Or build your own!</p>
-          </div>          
-        </div>
+				<div class="main_text">
+					<h3>Hello, I am</h3>
+					<div>
+						<img class="hi_text" src="images/hi.png">
+					</div>
+					<h2>BSCpE fresh grad</h2>
 
-      </div>
+					<p>Actively emphasizing personal and professional growth and development, and also<br>
+					to leverage my strong passion in programming. Aspiring to be an innovative<br>
+					IT professional with a blend of technical and business proficiency.<br>
+					Committed to learning, growing, and building a successful<br>
+					career as an IT professional.</p>
+				</div>
+			</div>
 
-      <a href="#carouselControls" class="carousel-control-prev" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
+    </main>
 
-      <a href="#carouselControls" class="carousel-control-next" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
-    </div>
+
+    <div class="not_main" id="about_me">
+			<div class="main_grid_reverse">
+				<div class="mainreverse_text">
+					<h2 class="about_title d-e font-lb">About Me</h2>			
+					<h2 class="l-c font-lb">Dynamic Computer Engineer | Dedicated to Professional Growth and Hands-On Experience</h2>
+					<p>As a recent computer engineering graduate, I am eager to gain hands-on experience while actively prioritizing personal growth and development. I am enthusiastically searching for a fitting opportunity to apply my skills and contribute to the field.</p>
+
+					<p class="reverse_text">My educational background, combined with hands-on projects, has equipped me with proficiency in C++, html, css and MySQL. I am well-versed in Web Development, Networking, Programming Languages and have a solid understanding of Embedded Systems.</p>
+
+					<p class="reverse_text">My goal is to contribute my skills and enthusiasm to a dynamic team, where I can continue to learn and grow as a professional. I am particularly interested in Web Development and Software Development, and I am excited about the prospect of making a meaningful impact in the field of computer engineering.</p>
+
+					<p class="reverse_text">I am currently seeking opportunities that align with my skills and aspirations, and I am open to adapt and continually learn. I look forward to contributing my energy, dedication, and fresh perspective to a forward-thinking organization.</p>
+
+				</div>
+				<div>
+					<img class="myposter" src="images/myposter2.png">
+					
+				</div>
+			</div>
+		</div>
+
+  
+
+
+
+
 
 
 
@@ -142,7 +164,7 @@
     <!-- modal safe -->
 
     <div class="modal fade" id="modal">
-      <div class="modal-dialog  main">
+      <div class="modal-dialog  modal-main">
         <div class="modal-content">
           <section>
 						<section>

@@ -8,17 +8,143 @@ body {
 	margin: 0 auto;
 }
 
+/* text-colors */
+.d-a {color: #0c0c0c;}
+.d-b {color: #002756;}
+.d-c {color: #035b7a;}
+.d-d {color: #c6c3b6;}
+.d-e {color: #eaeaea;}
+
+.l-a {color: #212121;}
+.l-b {color: #00447c;}
+.l-c {color: #0b7b9e;}
+.l-d {color: #dddace;}
+.l-e {color: #f2f3f4;}
+
+/* font site them */
+.font-lb {font-family: 'Libre Baskerville', serif;}
+
 
 .col-md-4 > img {
     width: 140px;
     height: 140px;
 }
 
+/* navbar repeat */
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #c6c3b6;
 }
 
-.main {
+nav.navbar {
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+/* navbar repeat */
+
+
+main, .not_main {
+    /* target/context = result	*/
+    /* 680/1000 = 0.68 */
+        padding-top: 70px;
+        padding-bottom: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        /* color: #eaeaea;
+        background-color: #0c0c0c; */
+    }
+
+
+
+.main_grid {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    margin: auto 10%;
+}
+.myposter {
+	width: 435px;
+	height: auto;
+}
+.main_text {
+    margin-top: 20%;
+}
+img.hi_text {
+    width: 400px;
+    height: auto;
+}
+.main_text h3 {
+    color: #0b7b9e;
+    font-size: 40px;
+    padding: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.main_text h2 {
+    color: #eaeaea;
+    font-size: 40px;
+    padding: 0;
+    margin-top: -3px;
+    font-weight: bold;
+}
+.main_text p {
+    margin-top: -9px;
+}
+
+
+
+.main_grid_reverse {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    margin: 0 6%;
+}
+
+.mainreverse_text p {
+    margin: 20px;
+    text-align: right;
+}
+.mainreverse_text p.reverse_text {
+	margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #212121;
+    text-align: right;
+    color: #eaeaea;    
+}
+
+.mainreverse_text h2 {
+    font-size: 25px;
+    text-align: right;
+    margin: 0 20px;
+}
+
+h2.about_title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mainreverse_text {
+    justify-self: end;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+.modal-main {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
