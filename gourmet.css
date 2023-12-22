@@ -136,15 +136,34 @@ h2.about_title {
 }
 
 
+/* modal css */
+.contact_main {
+    grid-row: content;
+    grid-column: content;
 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.contactItem {
 
-
-
+}
+.body_title {
+    font-size: 18px;
+}
 .iconTouch {
     width: 50%;
     height: auto;
 }
-
+.iconTact {
+    width: 55%;
+    height: auto;    
+}
+/* .iconSocial {
+    width: 45%;
+    height: auto;
+} */
 .modal-main {
     display: grid;
 
