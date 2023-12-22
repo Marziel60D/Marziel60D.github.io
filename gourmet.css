@@ -1,0 +1,36 @@
+html {
+	background: #eaeaea;
+	font-size: 16px;
+}
+body {
+	font-family: 'Signika Negative', sans-serif;
+	background: #c6c3b6;
+	margin: 0 auto;
+}
+
+
+.col-md-4 > img {
+    width: 140px;
+    height: 140px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #c6c3b6;
+}
+
+.main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+
+.modal {
+    --bs-modal-width: 70%;
+}
+
+.modal-content {
+	color: #f2f3f4;
+	background: #212121;
+}
