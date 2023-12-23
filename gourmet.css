@@ -142,13 +142,15 @@ h2.about_title {
     grid-column: content;
 
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 5px;
 }
-.contactItem {
-
+.contactItem img{
+    width: 8vh;
+    height: auto;    
 }
+
 .social_main {
     grid-row: content;
     grid-column: content;
@@ -159,24 +161,24 @@ h2.about_title {
     grid-gap: 5px;
 }
 .socialItem img {
-    width: 40%;
+    width: 9vh;
     height: auto;
 }
-.socialItem {
-    width: fit-content;
-}
+
 
 .body_title {
     font-size: 18px;
 }
+.modal-content .body_title {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
 .iconTouch {
     width: 50%;
     height: auto;
 }
-.iconTact {
-    width: 55%;
-    height: auto;    
-}
+
 /* .iconSocial {
     width: 45%;
     height: auto;
