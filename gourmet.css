@@ -149,6 +149,23 @@ h2.about_title {
 .contactItem {
 
 }
+.social_main {
+    grid-row: content;
+    grid-column: content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+.socialItem img {
+    width: 40%;
+    height: auto;
+}
+.socialItem {
+    width: fit-content;
+}
+
 .body_title {
     font-size: 18px;
 }
