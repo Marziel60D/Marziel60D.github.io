@@ -337,6 +337,20 @@ h2.about_title {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vh;
 }
-.skillItem {
 
+.btn-lb {
+    --bs-btn-color: #eaeaea;
+    --bs-btn-bg: #0b7b9e;
+    --bs-btn-border-color: #0b7b9e;
+    --bs-btn-hover-color: #eaeaea;
+    --bs-btn-hover-bg: #00447c;
+    --bs-btn-hover-border-color: #00447c;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #eaeaea;
+    --bs-btn-active-bg: #00447c;
+    --bs-btn-active-border-color: #00447c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #eaeaea;
+    --bs-btn-disabled-bg: #0b7b9e;
+    --bs-btn-disabled-border-color: #0b7b9e;
 }
