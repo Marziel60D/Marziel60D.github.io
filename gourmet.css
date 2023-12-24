@@ -9,6 +9,7 @@ body {
     justify-content: center;
 }
 /* common css */
+.bg-1-a {background-color: #212121;}
 /* text-colors */
 .d-a {color: #0c0c0c;}
 .d-b {color: #002756;}
