@@ -214,7 +214,7 @@ hr {
     margin: auto 10%;
 }
 .myposter {
-	width: 435px;
+	width: 67vh;
 	height: auto;
 }
 
@@ -225,18 +225,14 @@ img.hi_text {
     height: auto;
 }
 .main_text h3 {
-    color: #0b7b9e;
     font-size: 40px;
     padding: 0;
     margin-bottom: 8px;
-    font-weight: bold;
 }
 .main_text h2 {
-    color: #eaeaea;
     font-size: 40px;
     padding: 0;
     margin-top: -3px;
-    font-weight: bold;
 }
 .main_text p {
     margin-top: -9px;
@@ -355,3 +351,58 @@ h2.about_title {
     --bs-btn-disabled-bg: #0b7b9e;
     --bs-btn-disabled-border-color: #0b7b9e;
 }
+
+
+
+
+
+
+
+/* responsive */
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .main_text h3 {
+        color: red;
+        font-size: 40px;
+        padding: 0;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }   
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .main_text h3 {
+        color: green;
+        font-size: 40px;
+        padding: 0;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .myposter {
+        width: 45vh;
+        height: auto;
+        margin-left: -15vh;
+        margin-top: 3vh;
+    }
+    .main_text h3, .main_text h2 {
+        color: yellow;
+
+        font-size: 25px;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+}
+

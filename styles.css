@@ -1,4 +1,4 @@
-body {
+ body {
 	font-family: 'Signika Negative', sans-serif;
 	font-size: 15px;
 	background: #eaeaea;
@@ -241,7 +241,6 @@ header {
 .endline {
     border: 0;
     height: 10px;
-    c
 }
 
  .container.end {
