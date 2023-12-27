@@ -207,12 +207,26 @@ hr {
 
 .main_grid {
     display: grid;
-
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
+    grid-template-areas:"pic m-txt"
+                        "pic txt";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 0px;
     margin: auto 10%;
 }
+.pic {
+    grid-column: pic;
+    grid-row: pic;
+}
+.m-txt {
+    grid-column: m-txt;
+    grid-row: m-txt;
+}
+.txt{
+    grid-column: txt;
+    grid-row: txt;
+}
+
 .myposter {
 	width: 67vh;
 	height: auto;
@@ -242,18 +256,34 @@ img.hi_text {
 
 .main_grid_reverse {
     display: grid;
-
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas:"m-txt2 pic2"
+                        "txt2 pic2";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-column-gap: 0px;
-    margin: 0 6%;
+    margin: 0 5%;
+}
+.pic2 {
+    grid-column: pic2;
+    grid-row: pic2;
+}
+.m-txt2 {
+    grid-column: m-txt2;
+    grid-row: m-txt2;
+}
+.txt2 {
+    grid-column: txt2;
+    grid-row: txt2;
 }
 
-.mainreverse_text p {
+
+
+.m-text2 p {
     margin: 20px;
+    margin-bottom: 0;
     text-align: right;
 }
-.mainreverse_text p.reverse_text {
+.txt2 p.reverse_text {
 	margin: 20px;
     padding: 10px;
     border-radius: 5px;
@@ -262,7 +292,7 @@ img.hi_text {
     color: #eaeaea;    
 }
 
-.mainreverse_text h2 {
+.m-text2 h2 {
     font-size: 25px;
     text-align: right;
     margin: 0 20px;
@@ -273,7 +303,7 @@ h2.about_title {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.mainreverse_text {
+.m-text2 {
     justify-self: end;
     text-align: right;
 }
@@ -368,7 +398,7 @@ h2.about_title {
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .main_text h3 {
+    .m-txt h3 {
         color: red;
         font-size: 40px;
         padding: 0;
@@ -379,7 +409,7 @@ h2.about_title {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .main_text h3 {
+    .m-txt h3 {
         color: green;
         font-size: 40px;
         padding: 0;
@@ -390,17 +420,49 @@ h2.about_title {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .main_grid {
+        display: grid;
+        grid-template-areas:"m-txt"
+                            "pic"
+                            "txt";                            
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-column-gap: 0px;
+        margin: auto 10%;
+    }
+    .pic {
+        grid-column: pic;
+        grid-row: pic;
+    }
+    .m-txt {
+        grid-column: m-txt;
+        grid-row: m-txt;
+    }
+    .txt{
+        grid-column: txt;
+        grid-row: txt;
+        /* background-color: #212121; */
+        /* color: #eaeaea; */
+        padding: 2vh;
+        /* border-radius: 1vh; */
+        margin-top: -6vh;
+    }
+
 
     .myposter {
-        width: 45vh;
+        width: 100%;
         height: auto;
-        margin-left: -15vh;
-        margin-top: 3vh;
+        border: solid 3px #212121;
+        border-radius: 1vh;
     }
-    .main_text h3, .main_text h2 {
+    img.hi_text {
+        width: 100%;
+        height: auto;
+    }
+    .m-txt h3, .m-txt h2 {
         color: yellow;
 
-        font-size: 25px;
+        font-size: 4vh;
         padding: 0;
         margin-bottom: 8px;
     }
