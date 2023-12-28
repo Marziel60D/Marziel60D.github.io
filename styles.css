@@ -420,7 +420,7 @@ footer p {
 }
 
 /*screen size below 1201 pixels */
-@media (max-width:1241px) {
+/* @media (max-width:1241px) {
 	img.nav_logo {
 	    margin-left: -9px;
 	    margin-bottom: -20px;
@@ -459,9 +459,9 @@ footer p {
 	}
 
 
-}
+} */
 
-@media (max-width:1122px) {
+/* @media (max-width:1122px) {
 		img.nav_logo {
 	    margin-left: -17px;
 	    margin-bottom: -20px;
@@ -480,9 +480,9 @@ footer p {
 	    font-size: 15px;
 	}
 
-}
+} */
 
-@media (max-width:801px) {
+/* @media (max-width:801px) {
 	img.nav_logo {
 		margin-left: -165px;
 	    margin-bottom: -60px;
@@ -521,9 +521,9 @@ footer p {
 	}
 
 
-}
+} */
 
-@media (max-width:770px) {
+/* @media (max-width:770px) {
 	.project-grid {
 	    display: grid;
 	    grid-template-columns: 100%;
@@ -605,9 +605,9 @@ footer p {
 
 
 
-}
+} */
 
-@media (max-width:601px) {
+/* @media (max-width:601px) {
 	img.nav_logo {
 		margin-left: 8px;
 	    margin-bottom: -23px;
@@ -653,8 +653,27 @@ footer p {
 
 	.links ul li a img {
 		height: 60px;
+	} */
+
+
+
+
+/* different device sizes */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+	/* common css at sm devices */
+	.footer_align {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-gap: 1vh;    
 	}
-
-
+	.container_end {
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+	}
+}
 
 }

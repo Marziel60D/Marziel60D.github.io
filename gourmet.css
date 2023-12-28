@@ -426,19 +426,13 @@ h2.about_title {
                             "pic"
                             "txt";                            
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-rows: 0.8fr 1.3fr 1fr;
         grid-column-gap: 0px;
         margin: auto 5%;
     }
 
     .txt{
-        grid-column: txt;
-        grid-row: txt;
-        /* background-color: #212121; */
-        /* color: #eaeaea; */
         padding: 2vh;
-        /* border-radius: 1vh; */
-        margin-top: -7vh;
     }
 
     .main_grid_reverse {
