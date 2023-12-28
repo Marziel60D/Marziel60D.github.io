@@ -428,16 +428,9 @@ h2.about_title {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         grid-column-gap: 0px;
-        margin: auto 10%;
+        margin: auto 5%;
     }
-    .pic {
-        grid-column: pic;
-        grid-row: pic;
-    }
-    .m-txt {
-        grid-column: m-txt;
-        grid-row: m-txt;
-    }
+
     .txt{
         grid-column: txt;
         grid-row: txt;
@@ -445,9 +438,31 @@ h2.about_title {
         /* color: #eaeaea; */
         padding: 2vh;
         /* border-radius: 1vh; */
-        margin-top: -6vh;
+        margin-top: -7vh;
     }
 
+    .main_grid_reverse {
+        display: grid;
+        grid-template-areas:"m-txt2"
+                            "pic2"
+                            "txt2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-column-gap: 0px;
+        margin: 0 5%;
+    }
+    .pic2 {
+        grid-column: pic2;
+        grid-row: pic2;
+    }
+    .m-txt2 {
+        grid-column: m-txt2;
+        grid-row: m-txt2;
+    }
+    .txt2 {
+        grid-column: txt2;
+        grid-row: txt2;
+    }
 
     .myposter {
         width: 100%;
@@ -460,11 +475,25 @@ h2.about_title {
         height: auto;
     }
     .m-txt h3, .m-txt h2 {
-        color: yellow;
+        color: #0b7b9e;
 
         font-size: 4vh;
         padding: 0;
         margin-bottom: 8px;
+    }
+    .col_skill {
+        grid-gap: 2vh;
+    }
+
+/* common css at sm devices */
+    .footer_align {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 1vh;    
+    }
+    .container_end {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
     }
 }
 
