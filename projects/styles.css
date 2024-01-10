@@ -1,0 +1,90 @@
+body {
+  display: grid;  
+  background: #dddace;
+  text-align: center; 
+  padding: 10px; 
+  font-size: 1.2em;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+hr {
+  margin: 1.2em 0;
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
+}
+
+input, button {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #f2f3f4;
+  border: #00447c solid 0.2rem;
+}
+button {
+  background-color: #00447c;
+  color: #dddace;
+  border: #0b7b9e solid 0.2rem;  
+}
+input {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.fs_lb {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.fs_sn {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+/* .song_cover {
+  border-radius: 0.5rem;
+  border: #0b7b9e solid .2rem;
+} */
+
+.footer_container {
+  text-align: center;
+
+
+}
+.footer_link {
+  text-decoration: none;
+  color: #212121;
+  font-size: 1rem;
+}
+.footer_align {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  text-align: center;
+  justify-items: center;
+  margin: 2rem 0;    
+}
+hr {
+    opacity: 100%;
+}
+.endline {
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
+  /* margin-bottom: 0.5rem; */
+}
+.container_end {
+  font-family: 'Libre Baskerville', serif;
+  color: #212121;
+  padding-top: 10vh;
+  padding-bottom: 8vh;
+}
+/* common css */
+
+.sub_div {
+  position: absolute;
+  bottom: 0px;
+}
