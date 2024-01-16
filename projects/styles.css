@@ -70,12 +70,7 @@ input {
 hr {
     opacity: 100%;
 }
-.endline {
-  border: 0;
-  height: 10px;
-  background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
-  /* margin-bottom: 0.5rem; */
-}
+
 .container_end {
   font-family: 'Libre Baskerville', serif;
   color: #212121;
