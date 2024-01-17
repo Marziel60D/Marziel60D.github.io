@@ -195,9 +195,15 @@ hr {
 
 
 /* unique content */
+.mainDiv {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 .title {
-    font-size: 15vh;
-    padding-top: 12vh;
+    font-size: 10vh;
+    padding-top: 15vh;
+    padding-bottom: 4vh;
+    background-color: #00447c;
 }
 .prjct_main {
     display: grid;
