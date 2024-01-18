@@ -1,0 +1,207 @@
+html {
+	background: #eaeaea;
+	font-size: 16px;
+}
+body {
+	font-family: 'Signika Negative', sans-serif;
+	background: #c6c3b6;
+	margin: 0 auto;
+    justify-content: center;
+}
+/* common css */
+.bg-1-a {background-color: #212121;}
+/* text-colors */
+.d-a {color: #0c0c0c;}
+.d-b {color: #002756;}
+.d-c {color: #035b7a;}
+.d-d {color: #c6c3b6;}
+.d-e {color: #eaeaea;}
+
+.l-a {color: #212121;}
+.l-b {color: #00447c;}
+.l-c {color: #0b7b9e;}
+.l-d {color: #dddace;}
+.l-e {color: #f2f3f4;}
+
+/* font site them */
+.font-lb {font-family: 'Libre Baskerville', serif;}
+
+.btn-outline-sblue {
+    --bs-btn-color: #eaeaea;
+    --bs-btn-border-color: #00447c;
+    --bs-btn-hover-color: #eaeaea;
+    --bs-btn-hover-bg: #0b7b9e;
+    --bs-btn-hover-border-color: #00447c;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #00447c;
+    --bs-btn-active-border-color: #00447c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #00447c;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #00447c;
+    --bs-gradient: none;
+}
+.btn-lb {
+    --bs-btn-color: #eaeaea;
+    --bs-btn-bg: #0b7b9e;
+    --bs-btn-border-color: #0b7b9e;
+    --bs-btn-hover-color: #eaeaea;
+    --bs-btn-hover-bg: #00447c;
+    --bs-btn-hover-border-color: #00447c;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #eaeaea;
+    --bs-btn-active-bg: #00447c;
+    --bs-btn-active-border-color: #00447c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #eaeaea;
+    --bs-btn-disabled-bg: #0b7b9e;
+    --bs-btn-disabled-border-color: #0b7b9e;
+}
+
+/* navbar repeat */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #c6c3b6;
+}
+
+nav.navbar {
+	background-color: #212121;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+/* navbar repeat */
+
+
+/* modal css */
+.contact_main {
+    grid-row: content;
+    grid-column: content;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.contactItem img, .iconTouch{
+    width: 8vh;
+    height: auto;  
+}
+.iconTouch{
+
+    vertical-align: start;    
+}
+.social_main {
+    grid-row: content;
+    grid-column: content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+.socialItem img {
+    width: 9vh;
+    height: auto;
+}
+
+
+.body_title {
+    font-size: 18px;
+}
+.modal-content .body_title {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.modal-main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+
+.modal {
+    --bs-modal-width: 70%;
+}
+
+.modal-content {
+	color: #f2f3f4;
+	background: #212121;
+}
+.aline_two {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr; 
+    align-items: center;  
+}
+.v_2row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+    align-items: center;     
+}
+
+.icon_btn {
+	border: none;
+	transition: all ease-in-out .2s;
+    background-color: transparent; 
+    color: #3498db; 
+    font-size: 1.5em; 
+}
+
+.icon_btn:hover {
+	filter: brightness(.75);
+}
+.text_fader:hover > h5 {
+	visibility: visible;
+}
+.text_fader >h5 {
+    position: absolute;
+    font-size: 3vh;
+    transform: translate(-50%, -50%);
+    color: #eaeaea;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;    
+} 
+
+
+.footer_align {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr; 
+    text-align: center;
+    justify-items: center;     
+}
+hr {
+    opacity: 100%;
+}
+.endline {
+    border: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, #00447c, #212121, #0b7b9e);
+}
+.container_end {
+    background-color: #212121;
+	font-family: 'Libre Baskerville', serif;
+    color: #eaeaea;
+    padding-top: 5vh;
+    padding-bottom: 3vh;    
+}
+
+
+/* common css at sm devices */
+@media (max-width: 575.98px) {
+.footer_align {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1vh;    
+}
+.container_end {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+}
+/* end of - common css */
