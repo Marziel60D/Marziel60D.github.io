@@ -31,15 +31,10 @@
 
 
 .prjct {
-    /* border: 2px solid #00447c; */
+    display: grid;
+    grid-template-rows: 3fr 0.5fr 1fr;
     border-radius: 1vh;
-
     background-color: #eaeaea;
-
-    /* display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: 2fr 1fr 2fr 1fr;
-    grid-gap: 5vh;   */
 }
 
 
