@@ -4,10 +4,22 @@
     margin-bottom: 5vh;
 }
 .title {
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #0c0c0c,
+      -1px -1px 0 #0c0c0c,  
+       1px -1px 0 #0c0c0c,
+       -1px 1px 0 #0c0c0c,
+        1px 1px 0 #0c0c0c;
+
+
     font-size: 10vh;
     padding-top: 15vh;
-    padding-bottom: 4vh;
-    background-color: #00447c;
+    padding-bottom: 8vh;
+    background-image: url(../images/backgroundblue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -4vh;
 }
 .prjct_main {
     display: grid;
