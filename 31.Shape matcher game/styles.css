@@ -1,0 +1,41 @@
+main {
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(#aaa, #eee);
+}
+
+#playSection {
+  background: lightslategray;
+}
+
+section, div {
+  margin: 10px auto;
+}
+
+button {
+  border: 0;
+  font-size: 1.1rem;
+}
+
+#play {
+  background: lightyellow;
+  width: 30%;
+  border-radius: 5px;
+  margin: 10px;;
+  padding: 1.1em;
+}
+
+#match {
+  background: lightgreen;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+#match:hover{
+  padding: 10px;
+}
+
+#shapeSection {
+  display: flex;
+}
