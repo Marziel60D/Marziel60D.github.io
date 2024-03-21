@@ -47,3 +47,25 @@
 
 
 /* unique content */
+
+
+
+@media (max-width:415px) {
+
+    .prjct_main {
+        grid-template-columns: 1fr;
+        grid-gap: 3vh;
+        padding: 2vh;   
+    }
+    
+    .title {
+        font-size: 6vh;
+    }
+
+    .mainDiv {
+        margin-top: 0vh;
+    }
+
+
+
+}
