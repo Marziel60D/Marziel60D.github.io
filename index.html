@@ -6,16 +6,18 @@
 
     <meta property="og:title" content="MDC: Aspiring Web Developer Portfolio"/>
     <meta property="og:site_name" content="MDC: Aspiring Web Developer Portfolio" />
-    <meta property="og:image" content=”” />
+    <meta property="og:image" content=”https://marziel60d.github.io/images/mdc-share-thumbnail.png” />
     <meta property="og:description" content="Welcome to my portfolio! Discover my skills, 
       academic achievements, projects, and training certificates. Let's connect and explore how we can work together!"/>
-    <meta property="og:url" content="https://marziel60d.github.io/index.html"/>
+    <meta property="og:url" content="https://marziel60d.github.io/"/>
 
     <title>MDC Home</title>
     <link rel="icon" type="images/png" href="files/logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gourmet.css" >
+    <link rel="stylesheet" href="main_style.css" >
   </head>
 
 
@@ -44,7 +46,16 @@
                       <li><a class="dropdown-item" href="#">Download CV</a></li>
                       <li><a class="dropdown-item" href="#about_me">About</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <!-- <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://marziel60d.github.io/" target=”_blank”>
+                          <img src="mdc-share/mdc-share.png" width="35" height="auto" />
+                        </a>  -->
+
+                        <a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#mdc-share">
+                          <img src="mdc-share/mdc-share.png" width="35" height="auto" />
+                        </a>
+
+                      </li>
                     </ul>
                   </li>
                   <!-- <li class="nav-item">
@@ -60,6 +71,64 @@
         </nav>
     </header>
     <!-- header safe -->
+
+    <!-- mdc-share-modal -->
+    <div class="modal fade" id="mdc-share" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mdc-share-bd">
+          <div>
+            <p align="right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></p>
+            <h1 align="center" class="modal-title fs-5 font-lb" id="exampleModalLabel">SHARE THIS PORFOLIO</h1>
+          </div>
+
+          <div align="center" class="modal-body">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://marziel60d.github.io/" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-facebook.png" />
+            </a>
+
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://marziel60d.github.io/&title=MDC_PORTFOLIO" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-linkedin.png" />
+            </a>
+
+            <a href="https://twitter.com/intent/tweet?text=MDC_PORTFOLIO&url=https://marziel60d.github.io/" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-twitter.png" />
+            </a>
+
+            <a href="mailto:?subject=Recommending&nbsp;MDC&amp;body=Discover his skills, academic achievements, projects, and training certificates. Connect and explore how we can work together! Here's his profile link &#128073;&#127996; https://marziel60d.github.io/"
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-email.png" />
+            </a>
+
+            <a href="https://www.reddit.com/submit?url=https://marziel60d.github.io/&title=MDC_PORTFOLIO" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-reddit.png" />
+            </a>
+
+            <a href="https://www.tumblr.com/share/link?url=https://marziel60d.github.io/&name=MDC_PORTFOLIO&description=Welcome&nbsp;to&nbsp;my&nbsp;portfolio&#33;&nbsp;Discover&nbsp;my&nbsp;skills,&nbsp;academic&nbsp;achievements,&nbsp;projects,&nbsp;and&nbsp;training&nbsp;certificates.&nbsp;Let&#39;s&nbsp;connect&nbsp;and&nbsp;explore&nbsp;how&nbsp;you&nbsp;can&nbsp;work&nbsp;together&#33;" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-tumblr.png" />
+            </a>
+
+            <a href="https://pinterest.com/pin/create/button/?url=YOUR_URL&media=IMAGE_URL&description=Welcome&nbsp;to&nbsp;my&nbsp;portfolio&#33;&nbsp;Discover&nbsp;my&nbsp;skills,&nbsp;academic&nbsp;achievements,&nbsp;projects,&nbsp;and&nbsp;training&nbsp;certificates.&nbsp;Let&#39;s&nbsp;connect&nbsp;and&nbsp;explore&nbsp;how&nbsp;you&nbsp;can&nbsp;work&nbsp;together&#33;" 
+              target="blank" title="MDC: Aspiring Web Developer Portfolio">
+              <img class="mdc-share-icon" src="mdc-share/mdc-share-pinterest.png" />
+            </a>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- mdc-share-modal -->
+
+
+
+
     <!-- modal safe -->
 
     <div class="modal fade" id="modal">
