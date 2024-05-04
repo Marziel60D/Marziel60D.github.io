@@ -260,7 +260,7 @@ hr {
 /*newlinw*/
 .menu {
     width: 100%;
-	background-image: linear-gradient(to bottom, #eaeaea, #0b7b9e, #035b7a, #00447c,#002756, #212121);
+	background-image: linear-gradient(to bottom, #c6c3b6, #0b7b9e, #035b7a, #00447c,#002756, #212121);
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
