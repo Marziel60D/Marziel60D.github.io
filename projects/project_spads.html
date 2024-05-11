@@ -17,44 +17,107 @@
 	<body>
     <!-- header safe -->
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../files/logo.png"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Know more
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Download CV</a></li>
-                      <li><a class="dropdown-item" href="../index.html#about_me">About</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li> -->
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-sblue" type="submit">Search</button>
-                </form>
-              </div>
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../files/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Know more
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Download CV</a></li>
+                    <li><a class="dropdown-item" href="../index.html#about_me">About</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <!-- <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://marziel60d.github.io/" target=”_blank”>
+                        <img src="mdc-share/mdc-share.png" width="35" height="auto" />
+                      </a>  -->
+
+                      <a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#mdc-share">
+                        <img src="../mdc-share/mdc-share.png" width="35" height="auto" />
+                      </a>
+
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-sblue" type="submit">Search</button>
+              </form>
             </div>
-        </nav>
-    </header>
-    <!-- header safe -->
+          </div>
+      </nav>
+  </header>
+  <!-- header safe -->
+
+  <!-- mdc-share-modal -->
+  <div class="modal fade" id="mdc-share" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content mdc-share-bd">
+        <div>
+          <p align="right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></p>
+          <h1 align="center" class="modal-title fs-5 font-lb" id="exampleModalLabel">SHARE THIS PORFOLIO</h1>
+        </div>
+
+        <div align="center" class="modal-body">
+          <!-- facebook -->
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://marziel60d.github.io/" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-facebook.png" />
+          </a>
+
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://marziel60d.github.io/&title=MDC_PORTFOLIO" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-linkedin.png" />
+          </a>
+
+          <a href="https://twitter.com/intent/tweet?text=MDC_PORTFOLIO&url=https://marziel60d.github.io/" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-twitter.png" />
+          </a>
+
+          <a href="mailto:?subject=Recommending&nbsp;MDC&amp;body=Discover his skills, academic achievements, projects, and training certificates. Connect and explore how we can work together! Here's his profile link &#128073;&#127996; https://marziel60d.github.io/"
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-email.png" />
+          </a>
+
+          <a href="https://www.reddit.com/submit?url=https://marziel60d.github.io/&title=MDC_PORTFOLIO" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-reddit.png" />
+          </a>
+
+          <a href="https://www.tumblr.com/share/link?url=https://marziel60d.github.io/&name=MDC_PORTFOLIO&description=Welcome&nbsp;to&nbsp;my&nbsp;portfolio&#33;&nbsp;Discover&nbsp;my&nbsp;skills,&nbsp;academic&nbsp;achievements,&nbsp;projects,&nbsp;and&nbsp;training&nbsp;certificates.&nbsp;Let&#39;s&nbsp;connect&nbsp;and&nbsp;explore&nbsp;how&nbsp;you&nbsp;can&nbsp;work&nbsp;together&#33;" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-tumblr.png" />
+          </a>
+
+          <a href="https://pinterest.com/pin/create/button/?url=YOUR_URL&media=IMAGE_URL&description=Welcome&nbsp;to&nbsp;my&nbsp;portfolio&#33;&nbsp;Discover&nbsp;my&nbsp;skills,&nbsp;academic&nbsp;achievements,&nbsp;projects,&nbsp;and&nbsp;training&nbsp;certificates.&nbsp;Let&#39;s&nbsp;connect&nbsp;and&nbsp;explore&nbsp;how&nbsp;you&nbsp;can&nbsp;work&nbsp;together&#33;" 
+            target="blank" title="MDC: Aspiring Web Developer Portfolio">
+            <img class="mdc-share-icon" src="../mdc-share/mdc-share-pinterest.png" />
+          </a>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- mdc-share-modal -->
     <!-- modal safe -->
 
     <div class="modal fade" id="modal">
@@ -84,7 +147,7 @@
 							<div class="socialItem"><a href="https://github.com/Marziel60D" target=”_blank”><img src="../images/GH.svg" width="80" height="80" /> </a></div>
 							<div class="socialItem"><a href="https://www.instagram.com/marziel60d" target=”_blank”><img src="../images/Insta.svg" width="80" height="80" /> </a></div>
 							<div class="socialItem"><a href="https://m.me/DanielMcLure.II" target=”_blank”><img src="../images/mssgr.svg" width="80" height="80" /> </a></div>
-							<div class="socialItem"><a href="https://www.youtube.com/@thepoetonthenakedtruth2842" target=”_blank”><img src="images/YT.svg" width="80" height="80" /> </a></div>
+							<div class="socialItem"><a href="https://www.youtube.com/@thepoetonthenakedtruth2842" target=”_blank”><img src="../images/YT.svg" width="80" height="80" /> </a></div>
 							<div class="socialItem"><a href="https://www.pinterest.ph/Marziel60D" target=”_blank”><img src="../images/Pin.svg" width="80" height="80" /> </a></div>
             </div>            
           </div>
@@ -201,7 +264,6 @@
 
 				<div class="col-sm matic">
 					<h1 class="intro_text"><p class="solar">Solar<br/>Powered<br/>Adaptive</p> <p class="dichro" >Dichromatic Streetlighting<p/></h1>
-					<a href="https://www.linkedin.com/in/md-camposano/edit/forms/intro/new/?profileFormEntryPoint=PROFILE_SECTION" class="button">Add me on LinkedIn</a>
 				</div>
 
 
@@ -277,7 +339,7 @@
           <div class="col-sm">
             <figure>
 
-            	<video width="100%" height="auto" controls loop poster="files/demo.png">
+            	<video width="100%" height="auto" controls loop poster="../files/demo.png">
 				    <source src="../files/demo.mp4" type="video/mp4" />
 
 				    Your browser does not support the video tag.
@@ -301,7 +363,7 @@
           <div class="col-sm">
             <figure class="right_alignment">
 
-            	<video width="100%" height="auto" controls loop poster="files/spadsvid.jpg">
+            	<video width="100%" height="auto" controls loop poster="../files/spadsvid.jpg">
 				    <source src="../files/spadsvid.mp4" type="video/mp4" />
 
 				    Your browser does not support the video tag.
@@ -404,7 +466,7 @@
 		</div>
 
 		<div class="my-5">
-			<p style="font-size: .75em;">&copy 2023 Mark Daniel Camposano - md.camposano@outlook.com</p>
+			<p style="font-size: .75em;">&copy 2024 Mark Daniel Camposano - md.camposano@outlook.com</p>
 		</div>
 
 		</div>
